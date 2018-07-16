@@ -1,0 +1,25 @@
+{
+    "credit-card" : {
+        "chase-sapphire-reserve" : {
+            "name" : "Chase Saphhire Reserve",
+            "description" : "Ultimate Travel Card with 1.5x More Spending Power on Travel",
+            "bonus" : "50,000 Ultimate Reward Points if you spend $4,000 in 3 Months",
+            "value" : "$750+ Travel | $500 Cash",
+            "image" : "https://firebasestorage.googleapis.com/v0/b/cents-per-point.appspot.com/o/sapphire_reserve_card.png?alt=media&token=092ec581-6a92-4075-a088-e109522b1d8f"
+        },
+        "chase-sapphire-preferred" : {
+            "name" : "Chase Saphhire Preferred",
+            "description" : "The Perfect Everyday Travel Card with 1.25x More Spending Power on Travel",
+            "bonus" : "50,000 Ultimate Reward Points if you spend $4,000 in 3 Months",
+            "value" : "$625+ Travel | $500 Cash",
+            "image" : "https://firebasestorage.googleapis.com/v0/b/cents-per-point.appspot.com/o/sapphire_preferred_card.png?alt=media&token=3dad1f0c-4f59-4896-ba5a-14e70aeaf0cb"
+        },
+        "chase-freedom" : {
+            "name" : "Chase Freedom",
+            "description" : "Everyday Card with Rotating 5x Categories",
+            "bonus" : "15,000 Ultimate Rewards Points if you spend $500 in 3 Months",
+            "value" : "$150 Travel | $150 Cash",
+            "image" : "https://firebasestorage.googleapis.com/v0/b/cents-per-point.appspot.com/o/freedom_card.png?alt=media&token=8b914eaf-a5ed-4f5c-a14f-34a8d98893e6"
+        }
+    }
+}
