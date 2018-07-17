@@ -12,12 +12,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BonusOffersComponent } from './bonus-offers/bonus-offers.component';
 
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { PointCalculatorComponent } from './point-calculator/point-calculator.component';
+
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppNavbarComponent,
-    BonusOffersComponent
+    routingComponents
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     NgbModule.forRoot(),
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

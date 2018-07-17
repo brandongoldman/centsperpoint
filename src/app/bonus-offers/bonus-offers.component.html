@@ -1,39 +1,58 @@
-<div class="row" style="padding-left: 10%;">
-  <div *ngFor="let card of cardsObservable | async">
-    <div class="col-md-6">
-      <div class="card" style="width: 275px;">
-        <img class="card-img-top" src={{card.image}} alt={{card.name}}>
-        <div class="card-body">
-          <h5 class="card-title">{{card.name}}</h5>
-          <p class="card-text">{{card.description}}</p>
-          <!-- List Group -->
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <table style="width: 100%;">
-                <tr>
-                  <td style="vertical-align: top;"><i class="fa fa-plane"></i></td>
-                  <td style="text-align: left; padding-left: 4px;"><b>{{card.pointsTravel}}</b> points on Travel</td>
-                </tr>
-                <tr>
-                  <td style="vertical-align: top;"><i class="fa fa-cutlery"></i></td>
-                  <td style="text-align: left; padding-left: 4px;"><b>{{card.pointsDining}}</b> points on Dining</td>
-                </tr>
-                <tr>
-                  <td style="vertical-align: top;"><i class="fa fa-road"></i></td>
-                  <td style="text-align: left; padding-left: 4px;"><b>{{card.pointsGas}}</b> points on Gas</td>
-                </tr>
-                <tr>
-                  <td style="vertical-align: top;"><i class="fa fa-globe"></i></td>
-                  <td style="text-align: left; padding-left: 4px;"><b>{{card.pointsOther}}</b></td>
-                </tr><br>
-              </table>
-            </li>
-            <li class="list-group-item">The Sun won't come back</li>
-          </ul>
-        </div>
-        <div class="card-footer"><a href="#" class="btn btn-primary">Sign Up</a></div>
+<div class="container">
+    <div class="starter-template">
+        <div class="row" style="padding-left: 10%;">
+          <div *ngFor="let card of cardsObservable | async">
+            <div class="col-md-6">
+              <div class="card" style="width: 275px;">
+                <img class="card-img-top" src={{card.image}} alt={{card.name}}>
+                <div class="card-body">
+                  <h5 class="card-title">{{card.name}}</h5>
+                  <p class="card-text">{{card.description}}</p>
+                  <!-- List Group -->
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <table style="width: 100%;">
+                        <tr>
+                          <td style="vertical-align: top;"><i class="fa fa-plane"></i></td>
+                          <td style="text-align: left; padding-left: 4px;"><b>{{card.pointsTravel}}</b> points on Travel</td>
+                        </tr>
+                        <tr>
+                          <td style="vertical-align: top;"><i class="fa fa-cutlery"></i></td>
+                          <td style="text-align: left; padding-left: 4px;"><b>{{card.pointsDining}}</b> points on Dining</td>
+                        </tr>
+                        <tr>
+                          <td style="vertical-align: top;"><i class="fa fa-road"></i></td>
+                          <td style="text-align: left; padding-left: 4px;"><b>{{card.pointsGas}}</b> points on Gas</td>
+                        </tr>
+                          <tr>
+                          <td style="vertical-align: top;"><i class="fa fa-globe"></i></td>
+                          <td style="text-align: left; padding-left: 4px;"><b>{{card.pointsOther}}</b></td>
+                        </tr>
+                      </table>
+                    </li>
+                    <li class="list-group-item">
+                      <p>Receive <b>{{card.bonusVal}}</b> when you spend <b>{{card.spendReq}}+</b> in the first <b>{{card.timeToSpend}}</b>.</p>
+                    </li>
+                    <li class="list-group-item">
+                      <p>That's worth: </p>
+                      <table>
+                        <tr>
+                          <td style="width: 10em;"><button type="button" class="btn btn-primary"><i class="fa fa-plane"></i>&nbsp; {{card.travelValue}}</button></td>
+                          <td style="width: 50%;"><button type="button" class="btn btn-success"><i class="fa fa-money"></i>&nbsp; {{card.cashValue}}</button></td>
+                        </tr>
+                        <tr>
+                          <td style="width: 10em;">when redeemed for <b>travel</b>.</td>
+                          <td style="width: 50%;">when redeemed for <b>cash</b>.</td>
+                        </tr>
+                      </table>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-footer"><a href="#" class="btn btn-dark">Sign Up</a></div>
+              </div>
+            </div>
+            <br><br>
+          </div>
       </div>
     </div>
-    <br><br>
-  </div>
 </div>
