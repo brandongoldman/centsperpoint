@@ -1,15 +1,39 @@
 <div class="row" style="padding-left: 10%;">
   <div *ngFor="let card of cardsObservable | async">
     <div class="col-md-6">
-      <div class="card" style="width: 275px; height: 25rem;">
+      <div class="card" style="width: 275px;">
         <img class="card-img-top" src={{card.image}} alt={{card.name}}>
         <div class="card-body">
           <h5 class="card-title">{{card.name}}</h5>
           <p class="card-text">{{card.description}}</p>
-          <a href="#" class="btn btn-primary">Sign Up</a>
+          <!-- List Group -->
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <table style="width: 100%;">
+                <tr>
+                  <td style="vertical-align: top;"><i class="fa fa-plane"></i></td>
+                  <td style="text-align: left; padding-left: 4px;"><b>{{card.pointsTravel}}</b> points on Travel</td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top;"><i class="fa fa-cutlery"></i></td>
+                  <td style="text-align: left; padding-left: 4px;"><b>{{card.pointsDining}}</b> points on Dining</td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top;"><i class="fa fa-road"></i></td>
+                  <td style="text-align: left; padding-left: 4px;"><b>{{card.pointsGas}}</b> points on Gas</td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top;"><i class="fa fa-globe"></i></td>
+                  <td style="text-align: left; padding-left: 4px;"><b>{{card.pointsOther}}</b></td>
+                </tr><br>
+              </table>
+            </li>
+            <li class="list-group-item">The Sun won't come back</li>
+          </ul>
         </div>
+        <div class="card-footer"><a href="#" class="btn btn-primary">Sign Up</a></div>
       </div>
     </div>
-    <br>
+    <br><br>
   </div>
 </div>
